@@ -1,0 +1,67 @@
+# See https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+logging:
+  level:
+    ROOT: INFO
+    com: INFO
+    org.springframework.boot: INFO
+    org.springframework.web: INFO
+    org.hibernate: INFO
+    org.hibernate.SQL: INFO
+
+server:
+  #port: 8080
+  http2:
+    enabled: true
+  jetty:
+    max-http-post-size: 32767 # Max per ILP ASN.1
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  http:
+    # MULTIPART (MultipartProperties)
+    multipart:
+      enabled: false
+      max-file-size: 32KB
+      max-request-size: 32KB
+
+  # Database Settings
+  #datasource:
+    #url: jdbc:postgresql://localhost:5432/connector
+    #platform: postgresql
+    #username: sa
+    #password:
+    #driverClassName: org.postgresql.Driver
+  jpa:
+    #hibernate:
+      #ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false
+        create_empty_composites:
+          enabled: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  servlet:
+    session:
+      persistent: false # Whether to persist session data between restarts.
+      timeout: 0 # Session timeout. If a duration suffix is not specified, seconds will be used.
+      tracking-modes: SSL # Session tracking modes.
+  session:
+    store-type: NONE
+
+###
+#   H2 Settings
+###
+h2:
+  console:
+    enabled: false
+    path: /console
+    settings:
+      trace: false
+      web-allow-others: false
