@@ -16,4 +16,15 @@ public class WebConfig implements WebMvcConfigurer {
             .allowedOrigins("*")
             .allowCredentials(true);
     }
+
+//    @Bean
+//    public FilterRegistrationBean<SimpleCorsFilter> loggingFilter(){
+//        FilterRegistrationBean<SimpleCorsFilter> registrationBean
+//            = new FilterRegistrationBean<>();
+//
+//        registrationBean.setFilter(new SimpleCorsFilter());
+//        registrationBean.addUrlPatterns("/**");
+//
+//        return registrationBean;
+//    }
 }

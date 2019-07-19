@@ -22,7 +22,6 @@ import java.util.List;
 import java.util.Objects;
 
 @RestController
-@CrossOrigin
 public class PointerController {
 
     private final PointerRepository pointerRepository;

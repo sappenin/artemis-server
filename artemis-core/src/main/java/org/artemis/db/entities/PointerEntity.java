@@ -47,7 +47,7 @@ public class PointerEntity {
         this.pointerId = pointer.in();
         this.destinationType = pointer.destinationType();
         this.destinationAddress = pointer.destinationAddress();
-        this.balance = BigDecimal.ZERO;
+        this.balance = new BigDecimal(pointer.balance());
         this.threshold = new BigDecimal(pointer.threshold());
         this.assetCode = pointer.assetCode();
         this.assetScale = pointer.assetScale();

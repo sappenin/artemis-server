@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.google.common.base.CharMatcher;
 import com.google.common.base.Preconditions;
 import org.immutables.value.Value;
+import org.immutables.value.Value.Default;
 import org.immutables.value.Value.Immutable;
 
 import java.util.Locale;
@@ -56,6 +57,7 @@ public interface Pointer {
      * @return
      */
     @JsonProperty("balance")
+    @Default
     default String balance() {
         return "0";
     }
@@ -66,6 +68,7 @@ public interface Pointer {
      * @return
      */
     @JsonProperty("threshold")
+    @Default
     default String threshold() {
         return "100";
     }
