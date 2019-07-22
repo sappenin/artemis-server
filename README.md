@@ -1,4 +1,4 @@
-# Artemis Receiever (Payment Pointer Manager)
+# Artemis Server (Payment Pointer Manager)
 A server operating multiple ILP [Receivers](https://github.com/interledger/rfcs/blob/master/0027-interledger-protocol-4/0027-interledger-protocol-4.md#terminology) to enable programmable money through the use of configurable [Payment Pointers](https://github.com/interledger/rfcs/blob/master/0026-payment-pointers/0026-payment-pointers.md).
 
 ## Background
