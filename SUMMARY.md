@@ -2,12 +2,8 @@
 
 * [Documentation](README.md)
 
-## Java
+## Documentation
 
-* [Cakes](java/untitled.md)
-* [The Guide](java/the-guide.md)
-
-## API <a id="documentation"></a>
-
-* [Untitled](documentation/untitled.md)
+* [Cakes](documentation/untitled.md)
+* [The Guide](documentation/the-guide.md)
 
