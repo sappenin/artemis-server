@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Documentation](README.md)
+* [Interledger Artemis](README.md)
 
 ## Documentation
 
