@@ -1,5 +1,7 @@
 ---
-description: Programmable money using configurable Payment Pointers.
+description: >-
+  Programmable money using configurable [Payment
+  Pointers](https://paymentpointers.org).
 ---
 
 # Interledger Artemis
