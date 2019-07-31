@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Documentation](README.md)
+* [Artemis Server](README.md)
 
 ## Documentation
 
