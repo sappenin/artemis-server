@@ -6,9 +6,11 @@ description: Programmable money using configurable Payment Pointers.
 
 ## Status
 
-![&amp;lt;a href=&quot;https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE&quot;&amp;gt;&amp;lt;img src=&quot;https://img.shields.io/github/license/sappenin/java-ilp-connector.svg&quot;&amp;gt;&amp;lt;/a&amp;gt;](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)
+asdf &lt;a href="[https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE](https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE)"&gt;&lt;img src="[https://img.shields.io/github/license/sappenin/java-ilp-connector.svg](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)"&gt;&lt;/a&gt;
 
 Hello world, this is the license: \[img [https://img.shields.io/github/license/sappenin/java-ilp-connector.svg](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)\]\(http://example.com\).
+
+
 
 
 
