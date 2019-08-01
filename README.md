@@ -4,6 +4,14 @@ description: Programmable money using configurable Payment Pointers.
 
 # Interledger Artemis
 
+## Status
+
+![&amp;lt;a href=&quot;https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE&quot;&amp;gt;&amp;lt;img src=&quot;https://img.shields.io/github/license/sappenin/java-ilp-connector.svg&quot;&amp;gt;&amp;lt;/a&amp;gt;](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)
+
+Hello world, this is the license: \[img [https://img.shields.io/github/license/sappenin/java-ilp-connector.svg](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)\]\(http://example.com\).
+
+
+
 ## Background
 
 [Payment Pointers](https://paymentpointers.org/) are a standardized identifier for payment accounts. In the same way that an email address provides an identifier for a mailbox in the email ecosystem, a payment pointer is used by an account holder to share the details of an account with a counterparty.
