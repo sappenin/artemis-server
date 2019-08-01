@@ -7,9 +7,8 @@ description: Programmable money using configurable Payment Pointers.
 ## Status
 [![license-ci][license-image]][license-url]
 
-license-image]: https://img.shields.io/github/license/sappenin/java-ilp-connector.svg
+[license-image]: https://img.shields.io/github/license/sappenin/java-ilp-connector.svg
 [license-url]: https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE
-
 
 ## Background
 
