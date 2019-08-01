@@ -5,13 +5,10 @@ description: Programmable money using configurable Payment Pointers.
 # Interledger Artemis
 
 ## Status
+[![license-ci][license-image]][license-url]
 
-asdf &lt;a href="[https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE](https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE)"&gt;&lt;img src="[https://img.shields.io/github/license/sappenin/java-ilp-connector.svg](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)"&gt;&lt;/a&gt;
-
-Hello world, this is the license: \[img [https://img.shields.io/github/license/sappenin/java-ilp-connector.svg](https://img.shields.io/github/license/sappenin/java-ilp-connector.svg)\]\(http://example.com\).
-
-
-
+license-image]: https://img.shields.io/github/license/sappenin/java-ilp-connector.svg
+[license-url]: https://github.com/sappenin/java-ilp-connector/blob/master/LICENSE
 
 
 ## Background
