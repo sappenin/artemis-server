@@ -33,6 +33,7 @@
         <problem-spring-web.version>0.24.0</problem-spring-web.version>
         <failBuildOnAnyVulnerability>false</failBuildOnAnyVulnerability>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <quilt.version>0.19-SNAPSHOT</quilt.version>
 
         <jacoco.propertyName>argLine</jacoco.propertyName>
         <start-class>org.artemis.server.Application</start-class>
@@ -63,6 +64,21 @@
                 <groupId>${project.groupId}</groupId>
                 <artifactId>artemis-server</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.interledger</groupId>
+                <artifactId>ilp-core</artifactId>
+                <version>${quilt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.interledger</groupId>
+                <artifactId>link-core</artifactId>
+                <version>${quilt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.interledger</groupId>
+                <artifactId>stream-receiver</artifactId>
+                <version>${quilt.version}</version>
             </dependency>
 
             <dependency>

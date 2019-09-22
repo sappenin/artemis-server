@@ -1,10 +1,13 @@
 package org.interledger.paymentpointers;
 
-import org.artemis.PaymentEndpoint;
+import org.artemis.core.PaymentEndpoint;
 
 /**
  * Resolves a PaymentPointer into a URL, and vice versa.
+ *
+ * @deprecated Will be removed once Quilt contains this resolver.
  */
+@Deprecated
 public interface PaymentPointerResolver {
 
     /**

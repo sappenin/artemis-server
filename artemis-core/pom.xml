@@ -59,6 +59,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>org.interledger</groupId>
+            <artifactId>ilp-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.interledger</groupId>
+            <artifactId>link-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
         </dependency>

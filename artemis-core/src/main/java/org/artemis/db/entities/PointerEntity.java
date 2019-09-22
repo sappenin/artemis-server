@@ -1,9 +1,8 @@
 package org.artemis.db.entities;
 
-import org.artemis.DestinationAddressType;
-import org.artemis.Pointer;
+import org.artemis.core.ForwardingAddressType;
 
-import java.math.BigDecimal;
+import java.math.BigInteger;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
@@ -21,20 +20,26 @@ import javax.persistence.Table;
 })
 public class PointerEntity {
 
+    // TODO: Use an integer-based id here in addition to the pointer name.
+    // TODO: cap the length of this identifier at some rational length (what's twitter's length?)
     @Id
     private String pointerId;
 
-    private DestinationAddressType destinationType;
+    // TODO: Need to store the SPSP Url as well as teh Payment pointer
 
+
+    private ForwardingAddressType destinationType;
+
+    // TODO: Cap this value at some length (at least 1024, but see XRPL addreses.).
     private String destinationAddress;
 
-    private BigDecimal balance;
-
-    private BigDecimal threshold;
+    private BigInteger balance;
 
     private String assetCode;
 
     private int assetScale;
+
+    private BigInteger threshold;
 
     /**
      * To satisfy Hibernate.
@@ -43,15 +48,15 @@ public class PointerEntity {
 
     }
 
-    public PointerEntity(final Pointer pointer) {
-        this.pointerId = pointer.in();
-        this.destinationType = pointer.destinationType();
-        this.destinationAddress = pointer.destinationAddress();
-        this.balance = new BigDecimal(pointer.balance());
-        this.threshold = new BigDecimal(pointer.threshold());
-        this.assetCode = pointer.assetCode();
-        this.assetScale = pointer.assetScale();
-    }
+//    public PointerEntity(final Pointer pointer) {
+//        this.pointerId = pointer.in();
+//        this.destinationType = pointer.destinationType();
+//        this.destinationAddress = pointer.destinationAddress();
+//        this.balance = new BigDecimal(pointer.balance());
+//        this.threshold = pointer.threshold();
+//        this.assetCode = pointer.assetCode();
+//        this.assetScale = pointer.assetScale();
+//    }
 
     public String getPointerId() {
         return pointerId;
@@ -61,11 +66,11 @@ public class PointerEntity {
         this.pointerId = pointerId;
     }
 
-    public DestinationAddressType getDestinationType() {
+    public ForwardingAddressType getDestinationType() {
         return destinationType;
     }
 
-    public void setDestinationType(DestinationAddressType destinationType) {
+    public void setDestinationType(ForwardingAddressType destinationType) {
         this.destinationType = destinationType;
     }
 
@@ -77,21 +82,21 @@ public class PointerEntity {
         this.destinationAddress = destinationAddress;
     }
 
-    public BigDecimal getBalance() {
-        return balance;
-    }
-
-    public void setBalance(BigDecimal balance) {
-        this.balance = balance;
-    }
-
-    public BigDecimal getThreshold() {
-        return threshold;
-    }
-
-    public void setThreshold(BigDecimal threshold) {
-        this.threshold = threshold;
-    }
+//    public BigDecimal getBalance() {
+//        return balance;
+//    }
+//
+//    public void setBalance(BigDecimal balance) {
+//        this.balance = balance;
+//    }
+//
+//    public BigDecimal getThreshold() {
+//        return threshold;
+//    }
+//
+//    public void setThreshold(BigDecimal threshold) {
+//        this.threshold = threshold;
+//    }
 
     public String getAssetCode() {
         return assetCode;
